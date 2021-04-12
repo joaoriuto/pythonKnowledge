@@ -1,0 +1,23 @@
+--> Captação dos dados para a resolução:
+
+    __> O programa será executado com a requisição de um parâmetro, onde será a entrada correspondente ao nome da conta.
+         Exemplos: email, blog, forúm, etc.
+
+    __> O programa deverá ser iniciado por uma linha contendo #! (shebang) -> Para o possibilidade de execução fora do ambiente IDLE.
+    __> O programa deverá conter um breve comentário descrevendo-o.
+    __> As informações fornecidas, podem ser salvas como tipo String em um dicionário.
+    __> Argumentos de linhas de comando devem ser salvas em uma variável de nome: sys.argv.
+        O primeiro item da LISTA sys.argv sempre será uma string contendo o nome do arquivo do programa ('pw.py'),
+        e o segundo item  deverá ser o argumento da linha de comando. Nesse programa, esse argumento será o nnome da conta
+        cuja senha você deseja obter.
+        _> Tratar o erro para caso o usuário se esqueça de adicionar algum parâmetro de entrada. 
+
+    __> Verificação de senhas:
+        _> Verificar se o nome da conta está contido no dicionário: PASSWORDS como uma chave.
+            Caso verdadeiro: retornar a senha para o clipboard usando o pyperclip.copy() e exibir mensagem de sucesso.
+            Caso falso: retornar uma mensagem dizendo que o nome não foi encontrado.
+
+
+Ação: Quando fornecida chave de pesquisa e se ela for existente, a senha
+        correspondente deverá ser copiada para o clipboard (Área de transferência do S.O).
+
